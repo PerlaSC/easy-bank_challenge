@@ -1,0 +1,11 @@
+-var titles = ['Home', 'About', 'Contact', 'Blog', 'Carrees']
+
+nav.nav
+  .nav__img
+    img(src="images/logo.svg", alt="")
+  .nav__ul
+    ul
+      each title in titles
+        li=title
+  .nav__buttom
+    buttom Request Invite
