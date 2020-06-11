@@ -2,6 +2,8 @@ body {
   font-family: "Public Sans";
   font-size: 18px;
   margin: 0;
+  font-size: 18px;
+  color: #2d314d;
 }
 
 button {
@@ -23,6 +25,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1;
+  z-index: 5;
 }
 .nav__img {
   display: flex;
@@ -40,9 +43,41 @@ button {
   color: #9698a6;
   font-size: 0.8em;
   margin: 0.2em;
+  padding: 0.2em;
+}
+.nav__links li:hover {
+  border-bottom: 3px solid #31d35c;
+  cursor: pointer;
 }
 .nav__button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fafafa;
+}
+.landing__text {
+  text-align: left;
+  color: #2d314d;
+  padding: 5.5em;
+}
+.landing__text h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+}
+.landing__text p {
+  font-weight: 300;
+  font-size: 0.4em;
+}
+.landing__img {
+  background-image: url("images/bg-intro-desktop.svg");
+  right: -100px;
+  top: -50px;
+  background-position: cover;
+  background-repeat: no-repeat;
+  z-index: 4;
 }
