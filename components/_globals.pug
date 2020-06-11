@@ -1,5 +1,5 @@
 -var icon =["images/icon-online.svg", "images/icon-budgeting.svg", "images/icon-onboarding.svg", "images/icon-api.svg"]
--var ref =["images/image-currency.jpg", "images/image-resaurant.jpg", "images/image-plane.jpg", "images/image-confetti.jpg"]
+-var ref =["images/image-currency.jpg", "images/image-restaurant.jpg", "images/image-plane.jpg", "images/image-confetti.jpg"]
 -var titles = ['Home', 'About', 'Contact', 'Blog', 'Carrees']
 -var href= ["images/icon-facebook.svg", "images/icon-youtube.svg", "images/icon-twitter.svg", "images/icon-pinterest.svg", "images/icon-instagram.svg"]
 mixin socialIcons(href)
@@ -12,8 +12,10 @@ mixin features(icon, title, text)
     p=text
 
 mixin articles(ref, p, title, text)
-  article
-  img(src=""+ref, alt="")
-  p=p
-  h4=title
-  p=text
+  div.article
+    article
+      img(src=""+ref, alt="")
+    article.article__text
+      small=p
+      h4=title
+      p=text

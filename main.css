@@ -3,6 +3,19 @@ body {
   font-size: 18px;
   margin: 0;
   font-size: 18px;
+}
+
+p {
+  color: #2d314d;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
   color: #2d314d;
 }
 
@@ -19,6 +32,12 @@ button {
   display: flex;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -56,9 +75,11 @@ button {
 }
 
 .landing {
+  background-color: #fafafa;
+}
+.landing__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fafafa;
 }
 .landing__text {
   text-align: left;
@@ -71,7 +92,7 @@ button {
 }
 .landing__text p {
   font-weight: 300;
-  font-size: 0.4em;
+  font-size: 0.7em;
 }
 .landing__img {
   background-image: url("images/bg-intro-desktop.svg");
@@ -80,4 +101,65 @@ button {
   background-position: cover;
   background-repeat: no-repeat;
   z-index: 4;
+}
+
+.features {
+  padding: 50px 0;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: left;
+}
+.features__text {
+  margin: 2.2em 0;
+  width: 50%;
+}
+.features__text h2 {
+  font-size: 2.1em;
+}
+.features__articles {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.articles {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+.articles h2 {
+  font-size: 2.2em;
+  align-self: start;
+}
+.articles__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.articles__container .article img {
+  width: 100%;
+  height: 158px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.articles__container .article .article__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 20px;
+}
+.articles__container .article .article__text small {
+  font-size: 0.55em;
+}
+.articles__container .article .article__text p {
+  margin: 5px;
+  font-size: 0.7em;
+}
+.articles__container .article .article__text h4 {
+  margin: 5px;
+  font-size: 0.9em;
+}
+.articles__container .article .article__text h4:hover {
+  color: #31d35c;
+  cursor: pointer;
+  opacity: 0.9;
 }
