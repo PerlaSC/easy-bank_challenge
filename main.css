@@ -23,7 +23,6 @@ button {
   display: flex;
   justify-content: center;
   background-color: #31d35c;
-  opacity: 0.6;
   border: none;
   border-radius: 10px;
   height: 30px;
@@ -129,6 +128,7 @@ button {
 .articles h2 {
   font-size: 2.2em;
   align-self: start;
+  margin-top: 0;
 }
 .articles__container {
   display: grid;
@@ -162,4 +162,49 @@ button {
   color: #31d35c;
   cursor: pointer;
   opacity: 0.9;
+}
+
+footer {
+  background-color: #2d314d;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 50px;
+  color: #fafafa;
+}
+footer .social {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+footer .social__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social__icons svg {
+  margin: 10px;
+  fill: white;
+  cursor: pointer;
+}
+footer .social__icons path:hover {
+  fill: #31d35c;
+}
+
+.footer__links ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+.footer__links ul li {
+  font-size: 0.8em;
+  padding: 5px;
+}
+.footer__links ul li:hover {
+  color: #31d35c;
+  cursor: pointer;
 }
