@@ -1,11 +1,12 @@
 -var titles = ['Home', 'About', 'Contact', 'Blog', 'Carrees']
 
-nav.nav
-  .nav__img
-    img(src="images/logo.svg", alt="")
-  .nav__ul
-    ul
-      each title in titles
-        li=title
-  .nav__buttom
-    button.button Request Invite
+header
+  nav.nav
+    .nav__img
+      img(src="images/logo.svg", alt="")
+    .nav__links
+      ul
+        each title in titles
+          li=title
+    .nav__button
+      button.button Request Invite

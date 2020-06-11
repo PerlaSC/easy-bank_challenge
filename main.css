@@ -1,0 +1,48 @@
+body {
+  font-family: "Public Sans";
+  font-size: 18px;
+  margin: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background-color: #31d35c;
+  opacity: 0.6;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 140px;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1;
+}
+.nav__img {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  width: 100px;
+  margin: auto;
+}
+.nav__links {
+  display: flex;
+  justify-content: center;
+}
+.nav__links li {
+  display: inline;
+  color: #9698a6;
+  font-size: 0.8em;
+  margin: 0.2em;
+}
+.nav__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
