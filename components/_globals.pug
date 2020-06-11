@@ -1,13 +1,14 @@
--var icon =["images/icon-budgeting.svg", "images/icon-api.svg", ]
+-var icon =["images/icon-online.svg", "images/icon-budgeting.svg", "images/icon-onboarding.svg", "images/icon-api.svg"]
+-var ref =["images/image-currency.jpg", "images/image-resaurant.jpg", "images/image-plane.jpg", "images/image-confetti.jpg"]
 mixin features(icon, title, text)
   article
     img(src=""+icon, alt="")
-    h4 
-    p
+    h4=title
+    p=text
 
-mixin articles(img, p, h4, p)
+mixin articles(ref, p, title, text)
   article
-  img(src="", alt="")
-  p
-  h4
-  p
+  img(src=""+ref, alt="")
+  p=p
+  h4=title
+  p=text
