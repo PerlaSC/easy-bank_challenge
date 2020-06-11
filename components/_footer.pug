@@ -1,10 +1,12 @@
--var titles = ['Home', 'About', 'Contact', 'Blog', 'Carrees']
-mixin socialIcons(i)
-  i
+include _globals.pug
 footer
   .social
     img(src="images/logo.svg", alt="")
-    +socialIcons
+    +socialIcons(href[0])
+    +socialIcons(href[1])
+    +socialIcons(href[2])
+    +socialIcons(href[3])
+    +socialIcons(href[4])
   .footer__links
     ul
        each title in titles
