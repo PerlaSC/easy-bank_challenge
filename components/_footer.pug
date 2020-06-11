@@ -1,0 +1,14 @@
+-var titles = ['Home', 'About', 'Contact', 'Blog', 'Carrees']
+mixin socialIcons(i)
+  i
+footer
+  .social
+    img(src="images/logo.svg", alt="")
+    +socialIcons
+  .footer__links
+    ul
+       each title in titles
+        li=title
+  .footer__button
+    button.button Request Invite
+    small  © Easybank. All Rights Reserved
