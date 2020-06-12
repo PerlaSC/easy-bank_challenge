@@ -24,19 +24,24 @@ button {
   justify-content: center;
   background-color: #31d35c;
   border: none;
-  border-radius: 10px;
-  height: 30px;
+  opacity: 0.6;
+  border-radius: 20px;
+  height: 40px;
   width: 140px;
   color: white;
-  display: flex;
   text-align: center;
   align-items: center;
   cursor: pointer;
+  font-weight: 400;
 }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #2d314d;
 }
 
 .nav {
@@ -164,37 +169,11 @@ button {
   opacity: 0.9;
 }
 
-footer {
-  background-color: #2d314d;
+.footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px 50px;
   color: #fafafa;
 }
-footer .social {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-footer .social__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer .social__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer .social__icons svg {
-  margin: 10px;
-  fill: white;
-  cursor: pointer;
-}
-footer .social__icons path:hover {
-  fill: #31d35c;
-}
-
 .footer__links ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -207,4 +186,42 @@ footer .social__icons path:hover {
 .footer__links ul li:hover {
   color: #31d35c;
   cursor: pointer;
+}
+.footer__button {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  grid-row-gap: 20px;
+  padding: 30px 0;
+}
+.footer__button button {
+  right: 0;
+  opacity: 1;
+}
+.footer__button small {
+  font-size: 0.6em;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.social__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social__icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social__icons svg {
+  margin: 10px;
+  fill: white;
+  cursor: pointer;
+}
+.social__icons path:hover {
+  fill: #31d35c;
 }
