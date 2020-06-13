@@ -89,6 +89,9 @@ footer {
 .nav__menu {
   display: none;
 }
+.nav .menu {
+  display: none;
+}
 
 .landing {
   background-color: #fafafa;
@@ -320,7 +323,7 @@ footer {
     height: 70px;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
-    background-color: black;
+    position: relative;
   }
   .nav__img {
     display: flex;
@@ -339,22 +342,36 @@ footer {
     height: 15px;
     cursor: pointer;
   }
-  .nav__menu {
-    display: block;
-    grid-area: 2/span 2;
+  .nav .activeMenu {
     display: flex;
     background: white;
-    margin: auto;
-    width: 320px;
+    margin: 0 10vw;
+    width: 80vw;
+    position: absolute;
+    z-index: 4;
+    top: 90px;
     justify-content: center;
     border-radius: 10px;
   }
-  .nav__menu ul {
+  .nav .activeMenu ul {
     list-style: none;
     padding: 20px 0;
   }
-  .nav__menu ul li {
+  .nav .activeMenu ul li {
     padding: 10px;
+    cursor: pointer;
+  }
+
+  .active {
+    position: absolute;
+    top: 70px;
+    display: flex;
+    background-color: #2d314d;
+    opacity: 0.5;
+    width: 100vw;
+    height: 90vh;
+    bottom: 0;
+    z-index: 1;
   }
 
   .features__text {
