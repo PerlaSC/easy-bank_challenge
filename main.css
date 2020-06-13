@@ -243,3 +243,35 @@ footer {
 .social__icons path:hover {
   fill: #31d35c;
 }
+
+@media (max-width: 640px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .features__text {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .features__articles {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .articles__container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .article__text {
+    text-align: left;
+  }
+  .article img {
+    height: 213px;
+  }
+}
