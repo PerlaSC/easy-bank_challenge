@@ -2,6 +2,11 @@
 
 header
   nav.nav
+    .nav__menu
+       ul
+        each title in titles
+          li=title
+
     .nav__img
       img(src="images/logo.svg", alt="")
     .nav__links
@@ -10,3 +15,5 @@ header
           li=title
     .nav__button
       button.button Request Invite
+    .nav__hamburger
+      img(src="images/icon-hamburger.svg", alt="")
