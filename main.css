@@ -352,6 +352,7 @@ footer {
     top: 90px;
     justify-content: center;
     border-radius: 10px;
+    height: 45vh;
   }
   .nav .activeMenu ul {
     list-style: none;
@@ -362,7 +363,7 @@ footer {
     cursor: pointer;
   }
 
-  .active {
+  .active__container {
     position: absolute;
     top: 70px;
     display: flex;
@@ -432,6 +433,46 @@ footer {
     grid-template-columns: 1fr;
     padding: 0;
     grid-gap: 10px;
+  }
+
+  .background__main {
+    height: 50vh;
+    background-image: url(" images/bg-intro-mobile.svg");
+    top: 0;
+    position: absolute;
+    background-position: -100px;
+    background-size: 150%;
+    width: 100%;
+    left: 0;
+  }
+
+  .phone__image {
+    display: none;
+  }
+
+  .text {
+    margin-top: 150px;
+    text-align: center;
+    width: 350px;
+    color: #2d314d;
+  }
+  .text h1 {
+    font-size: 2.5em;
+  }
+  .text button {
+    margin: auto;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .overflow {
+    overflow: hidden;
   }
 }
 @media (max-width: 420px) {
