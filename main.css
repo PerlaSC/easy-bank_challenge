@@ -3,12 +3,20 @@ body {
   font-size: 18px;
   margin: 0;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 p {
   color: #2d314d;
+  opacity: 0.7;
   font-weight: 300;
   font-size: 0.8em;
+}
+
+header {
+  background-color: white;
+  z-index: 5;
+  position: relative;
 }
 
 h1,
@@ -22,9 +30,7 @@ h4 {
 button {
   display: flex;
   justify-content: center;
-  background-color: #31d35c;
   border: none;
-  opacity: 0.6;
   border-radius: 20px;
   height: 40px;
   width: 140px;
@@ -33,6 +39,7 @@ button {
   align-items: center;
   cursor: pointer;
   font-weight: 400;
+  background: linear-gradient(90deg, #31d35c, #2bb7da);
 }
 
 .container {
@@ -80,15 +87,16 @@ footer {
 
 .landing {
   background-color: #fafafa;
+  position: relative;
 }
 .landing__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  padding: 150px 0;
 }
 .landing__text {
   text-align: left;
+  width: 350px;
   color: #2d314d;
-  padding: 5.5em;
 }
 .landing__text h1 {
   font-weight: 400;
@@ -96,15 +104,24 @@ footer {
 }
 .landing__text p {
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 .landing__img {
+  z-index: 1;
+  position: absolute;
   background-image: url("images/bg-intro-desktop.svg");
-  right: -100px;
-  top: -50px;
-  background-position: cover;
+  background-position-y: -250px;
+  background-position-x: 0px;
+  background-size: cover;
   background-repeat: no-repeat;
-  z-index: 4;
+  width: 780px;
+  right: 0;
+  top: 0;
+}
+.landing__img img {
+  position: relative;
+  right: -120px;
+  top: -100px;
 }
 
 .features {
@@ -112,6 +129,7 @@ footer {
   background-color: #f3f4f6;
   display: flex;
   justify-content: left;
+  z-index: 1;
 }
 .features__text {
   margin: 2.2em 0;
